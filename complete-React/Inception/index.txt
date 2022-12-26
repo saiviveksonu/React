@@ -1,0 +1,26 @@
+In this project we learn:-
+    In main.html
+        1)How to create dynamic html elements using javascript ?
+        2)How to create dynamic nested html elements using javascript ?
+    In index.html
+        1)How to create dynamic html elements using react ?
+        2)How to create dynamic nested html elements using react ?
+
+                                -: Questions and answers :-
+1)why React is called as react?
+    React is called as react because of two things:-
+        1)whenever there is a change in data it will be automatically updated to document.
+        2)instead of focusing on how to update data to dom we can focuse on writing logic to update data.
+
+2)Difference between library and framework?
+    Library is the set of functions that can be called to perform certain tasks. Framework has the certain set of call which also has to structure of how to use them.
+    Library is more extensible and level of abstraction is low.
+    Library is loosely coupled.
+
+3)Difference between React and reactDom?
+    React offers core functionality to build user interfaces using Components and Virtual dom.
+    ReactDom updates the dom with the changes in the core react components.
+
+4)What is difference between react.development.js and react.production.js files via CDN       
+    react.development.js offers functionality to develop react application and offers debugger or developer tools to debug and test the react application.
+    react.production.js focusing on running react application smoothly on production enviroment.it doesn't have any developer tools.

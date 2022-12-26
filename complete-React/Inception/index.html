@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namasthe React</title>
+</head>
+<body>
+<h1>Nmaste everyone</h1>    
+<div id="root"></div>
+</body>
+<script>
+// -- if i have to create h1 element using javascript --
+// we can do it by using dom manupilation
+const heading=document.createElement("h1")
+heading.innerHTML="hello welcome to namasthe react"
+const root=document.querySelector("#root")
+root.appendChild(heading)
+</script>
+</html>
