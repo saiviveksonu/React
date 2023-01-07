@@ -10,28 +10,23 @@
 
 <body>
     <div id="root">
-        <!-- react will overrite if anything is there here -->
     </div>
-    <div id="footer"></div>
 </body>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script>
-    const heading = React.createElement("h1", {
-        id: "title"
-    }, "hello everyone");
-    console.log(heading) // In react every html element is an object
-    // creating nested elements in react.
-    const heading1 = React.createElement("h1", {
-        id: "title1"
-    }, "heading1");
-    const heading2 = React.createElement("h1", {
-        id: "title2"
-    }, "heading2");
-    const container = React.createElement("div", { id: "container" }, [heading1, heading2]);
+<script type="text/babel">
+    const arr = [1, 2, 3, 4]
+    const Heading = () => (
+        <div>
+            {arr.map((item) => {
+                return <li>{item}</li>
+            })}
+            <h1>welcome to namasthe javascript</h1>
+        </div>
+    )
     const root = ReactDOM.createRoot(document.querySelector("#root"))
-    const Root = ReactDOM.createRoot(document.querySelector("#footer"))
-    root.render(container)
-    Root.render(heading)
+    root.render(<Heading />)
 </script>
+
 </html>
